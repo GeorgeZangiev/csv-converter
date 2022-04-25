@@ -11,7 +11,7 @@ import java.util.*;
 
 public class StandardCsvConverter implements StandardConverter {
 
-    private final CsvConverter csvConverter;
+    private CsvConverter csvConverter;
 
     public StandardCsvConverter(CsvConverter csvConverter) {
         this.csvConverter = csvConverter;
@@ -41,8 +41,7 @@ public class StandardCsvConverter implements StandardConverter {
                 return result;
             }
         };
-        CsvConverter converter = new CsvConverter(collection, outputStream);
-        converter.convert(collection, outputStream);
+        csvConverter.convert(collection, outputStream);
     }
 
 }

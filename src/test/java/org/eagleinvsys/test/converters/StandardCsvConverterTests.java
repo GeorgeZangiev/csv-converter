@@ -15,7 +15,7 @@ import java.util.*;
 class StandardCsvConverterTests {
 
     @Mock
-    private CsvConverter csvConverter;
+    private CsvConverter csvConverter = new CsvConverter();
     private StandardCsvConverter underTest;
 
     @BeforeEach

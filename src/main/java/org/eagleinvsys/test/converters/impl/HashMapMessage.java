@@ -7,11 +7,11 @@ import java.util.Map;
 
 public class HashMapMessage implements ConvertibleMessage {
 
+    private Map<String, String> map = new HashMap<>();
+
     public void setMap(Map<String, String> map) {
         this.map = map;
     }
-
-    Map<String, String> map = new HashMap<>();
 
     @Override
     public String getElement(String elementId) {

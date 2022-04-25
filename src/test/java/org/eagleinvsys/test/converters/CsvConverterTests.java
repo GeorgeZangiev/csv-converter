@@ -41,6 +41,6 @@ class CsvConverterTests {
         collectionToConvert.add(map2);
         OutputStream outputStream = new FileOutputStream("/Users/elmo/Desktop/test.csv");
         //then
-        assertThrows(IllegalArgumentException.class, () ->{underTest.convert(collectionToConvert, outputStream);});
+        assertThrows(IllegalArgumentException.class, () -> underTest.convert(collectionToConvert, outputStream));
     }
 }

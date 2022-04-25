@@ -6,18 +6,10 @@ import org.eagleinvsys.test.converters.ConvertibleMessage;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.util.Collection;
 import java.util.List;
 
 public class CsvConverter implements Converter {
 
-    ConvertibleCollection collection;
-    OutputStream outputStream;
-
-    public CsvConverter(ConvertibleCollection collection, OutputStream outputStream) {
-        this.collection = collection;
-        this.outputStream = outputStream;
-    }
     /**
      * Converts given {@link ConvertibleCollection} to CSV and outputs result as a text to the provided {@link OutputStream}
      *
